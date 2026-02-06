@@ -1,0 +1,11 @@
+-login signup
+-histoy of chat
+-add attachment to chat(RAG)
+-pin chat(only 3)
+-share a chat
+-group chat
+-voice input
+-multi language
+-quiz canvas    
+-websearch
+-search in chat history
