@@ -9,15 +9,16 @@ app = FastAPI()
 app.include_router(user_router)
 
 #to create db
-if not os.path.exists("test.db"):
-    engine=create_engine(DATABASE_URL)
-    Base.metadata.create_all(engine)
+
+engine=create_engine(DATABASE_URL)
+Base.metadata.create_all(engine)
     
 
-
+    
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
 
 if __name__ == "__main__":
     import uvicorn
